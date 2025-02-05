@@ -52,9 +52,14 @@ Next, you need to find 3 paths:
 3. The path towards your cron_job.log (file does not need to exist)
 
 In terminal, open the crontab file and add the job.
+```bash
 'crontab -e'
-* * * * * /Users/wdeprins/Desktop/sdaac/ccc-swim-venv/bin/python3 /Users/wdeprins/Desktop/sdaac/ccc-swim/cron.py >> /Users/wdeprins/Desktop/sdaac/ccc-swim/cron.log 2>&1
+```
+Add the job:
 
+```bash
+* * * * * /Users/wdeprins/Desktop/sdaac/ccc-swim-venv/bin/python3 /Users/wdeprins/Desktop/sdaac/ccc-swim/cron.py >> /Users/wdeprins/Desktop/sdaac/ccc-swim/cron.log 2>&1
+```
 ### Disclaimer
 
 This script is provided "as is" without any warranties of any kind, either express or implied, including but not limited to the implied warranties of merchantability and fitness for a particular purpose. The author does not warrant that the script will be error-free or that it will meet the specific requirements of the user. The user assumes all responsibility for the use of this script and any results obtained from it. In no event shall the author be liable for any damages, including but not limited to direct, indirect, incidental, special, or consequential damages arising out of the use or inability to use this script. Users are advised to test the script thoroughly before relying on it in a production environment.
