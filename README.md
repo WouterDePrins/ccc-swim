@@ -45,7 +45,7 @@ Create an .env file in main directory with your Catalyst Center information:
 CCC_BASE_URL=https://10.10.10.10
 CCC_USERNAME=admin
 CCC_PASSWORD=password
-SCHEDULE_FILE=/../schedule.json (path towards the file)
+SCHEDULE_FILE=/path/to/schedule.json
 ```
 
 ### CRON 
