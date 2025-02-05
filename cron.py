@@ -3,7 +3,7 @@
 import json
 from datetime import datetime, timedelta
 from main import Automation
-from config import SCHEDULE_FILE
+from config import SCHEDULE_FILE, PROD
 
 def read_schedule(file_path):
     """Read the schedule file and return a list of scheduled tasks."""
@@ -35,7 +35,8 @@ def main():
 
     # Write the updated schedule back to the schedule file, otherwise it will run every minute... 
 
-    write_schedule(SCHEDULE_FILE, tasks)
+    if PROD:
+        write_schedule(SCHEDULE_FILE, tasks)
     if all_sites:
         network_automation = Automation(all_sites)  # Pass sites array to the class
         network_automation.upgrade()  # Trigger upgrade process

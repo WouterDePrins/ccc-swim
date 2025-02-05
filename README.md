@@ -50,7 +50,16 @@ CCC_PASSWORD=password
 SCHEDULE_FILE=/path/to/schedule.json
 ```
 
+### Testing 
+
+By default, the boolean PROD in config.py is set to False. This is for testing and prevents that the 'last run' changes after executing the script.
+In the Python venv, execute ```python3 cron.py``` to test.
+
 ### CRON 
+
+IMPORTANT! If you want to run a CRON job, you need to change the boolean PROD in config.py to True.
+Otherwise, the script will execute every minute for all sites...
+
 Next, you need to find 3 paths:
 1. Use the path of your Python venv (/path/to/your/venv/bin/python3)
 2. The path towards your cron_job.py  

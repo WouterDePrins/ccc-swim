@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv() 
 
+PROD = False ## change to True to write to schedule
 CCC_BASE_URL = os.getenv("CCC_BASE_URL", "")
 USERNAME = os.getenv("CCC_USERNAME", "")
 PASSWORD = os.getenv("CCC_PASSWORD", "")
