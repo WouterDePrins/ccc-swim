@@ -1,0 +1,16 @@
+[
+    {
+        "interval_weeks": 3,
+        "sites": [
+            "Global/PEG2/DEV"
+        ],
+        "last_run": "2025-02-05 15:07"
+    },
+    {
+        "interval_weeks": 3,
+        "sites": [
+            ""
+        ],
+        "last_run": "2025-02-03 12:30"
+    }
+]
