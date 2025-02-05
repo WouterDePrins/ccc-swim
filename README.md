@@ -6,6 +6,8 @@ Managing upgrades across multiple sites can be tedious, requiring manual selecti
 
 You will need to run a CRON job to check if it's time to upgrade specific site(s), provided in the 'schedule.json'.
 
+IMPORTANT: this is WIP so not fully functional.
+
 ## TODO
 
 - [x] Authentication toward CCC and token usage
