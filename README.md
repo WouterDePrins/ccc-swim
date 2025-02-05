@@ -40,10 +40,13 @@ pip install -r requirements.txt
 
 ### .env file
 Create an .env file in main directory with your Catalyst Center information:
+
+```bash
 CCC_BASE_URL=https://10.10.10.10
 CCC_USERNAME=admin
 CCC_PASSWORD=password
 SCHEDULE_FILE=/../file.json (path towards the file)
+```
 
 ### CRON 
 Next, you need to find 3 paths:
