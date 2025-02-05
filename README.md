@@ -32,7 +32,7 @@ Go in the venv
 source ccc-swim-env/bin/activate
 ```
 
-Navigate to the repo you downloaded/imported and install packages:
+Navigate to the repo you downloaded/cloned and install packages:
 
 ```bash
 pip install -r requirements.txt
