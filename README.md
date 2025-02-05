@@ -45,23 +45,23 @@ Create an .env file in main directory with your Catalyst Center information:
 CCC_BASE_URL=https://10.10.10.10
 CCC_USERNAME=admin
 CCC_PASSWORD=password
-SCHEDULE_FILE=/../file.json (path towards the file)
+SCHEDULE_FILE=/../schedule.json (path towards the file)
 ```
 
 ### CRON 
 Next, you need to find 3 paths:
-1. Search for your Python installation path in Termnial: 'which python3'
-2. The path towards your cron_job.py 
+1. Use the path of your Python venv (/path/to/your/venv/bin/python3)
+2. The path towards your cron_job.py  
 3. The path towards your cron_job.log (file does not need to exist)
 
 In terminal, open the crontab file and add the job.
 ```bash
 'crontab -e'
 ```
-Add the job:
+Add the job (change your paths!)
 
 ```bash
-* * * * * /Users/wdeprins/Desktop/sdaac/ccc-swim-venv/bin/python3 /Users/wdeprins/Desktop/sdaac/ccc-swim/cron.py >> /Users/wdeprins/Desktop/sdaac/ccc-swim/cron.log 2>&1
+* * * * * /path/to/your/vent/python3/ /path/to/your/cron.py >> /path/to/your/cron.log 2>&1
 ```
 ### Disclaimer
 
